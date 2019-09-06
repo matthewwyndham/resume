@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=B612+Mono|Fira+Sans|Lustria|Rubik|Vollkorn&display=swap');
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Rubik', sans-serif; */
+/* font-family: 'Vollkorn', serif;
+font-family: 'Lustria', serif; */
+/* font-family: 'B612 Mono', monospace; */
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+#resume {
+  width: 8.5in;
+  height: 11in;
+  font-family: 'Rubik', sans-serif; /* default font */
+  
+/*   margin: auto; */
+  
+  display: flex;
+  flex-direction: column;
+}
+
+#name {
+  font-size: 49px;
+  color: #124; 
+  font-family: 'Lustria', serif;
+  border-radius: 4px;
+  background: #ececf5;
+  padding: 4px;
+  padding-left: 20px;
+  margin-bottom: 4px;
+}
+
+#contact_info {
+  font-family: 'Rubik', sans-serif;
+  border-radius: 4px;
+  background: #f0f0f6;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  
+  display: flex;
+  justify-content: space-between;
+  
+  font-size: 15px;
+}
+
+.divider {
+  border-radius: 4px;
+  background: #f4f0f0;
+  padding: 4px;
+  margin-top: 4px;
+  
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title dates"
+    "subtitle ."
+    "info info"
+}
+
+.dark {
+  background: #e2e0e0;
+}
+
+.title {
+  font-size: 24px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  
+  padding-left: 2px;
+  padding-top: 2px;
+  
+  grid-area: title;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: italic;
+  
+  padding-left: 2px;
+  
+  grid-area: subtitle;
+}
+
+.dates {
+  text-align: right;
+  font-family: 'B612 Mono', monospace;
+  
+  padding-right: 2px;
+  padding-top: 2px;
+  
+  grid-area: dates;
+}
+
+.info {
+  font-family: 'Vollkorn', serif;
+  
+  grid-area: info;
+}
+
+#spacer {
+  background: clear;
+  border-radius: 4px;
+  margin-top: 4px;
+  flex-grow: 1;
+}
